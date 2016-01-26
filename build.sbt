@@ -6,6 +6,7 @@ scalacOptions ++= Seq("-deprecation", "-explaintypes", "-feature", "-unchecked",
 
 libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % "1.6.0" withSources() withJavadoc(),
+  "org.apache.spark" %% "spark-sql" % "1.6.0" withSources() withJavadoc(),
   "org.scalatest" %% "scalatest" % "2.2.4" withSources() withJavadoc()
 )
 
