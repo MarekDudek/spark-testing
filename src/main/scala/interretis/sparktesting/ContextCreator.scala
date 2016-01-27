@@ -15,5 +15,6 @@ object ContextCreator {
     new SparkContext(config)
   }
 
-  def sqlContext(sc: SparkContext): SQLContext = new SQLContext(sc)
+  def sqlContext(sc: SparkContext): SQLContext =
+    new SQLContext(sc)
 }
