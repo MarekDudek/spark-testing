@@ -1,6 +1,7 @@
 package interretis.sparktesting
 
 import org.apache.spark.sql.SQLContext
+import org.apache.spark.sql.hive.HiveContext
 import org.apache.spark.{SparkConf, SparkContext}
 
 object ContextCreator {
@@ -17,4 +18,7 @@ object ContextCreator {
 
   def sqlContext(sc: SparkContext): SQLContext =
     new SQLContext(sc)
+
+  def hiveContext(sc: SparkContext): HiveContext =
+    new HiveContext(sc)
 }
